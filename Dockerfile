@@ -17,7 +17,6 @@ RUN make install
 
 RUN rm -R /etc/ipsec.d
 RUN rm /etc/ipsec.conf
-RUN rm /etc/ipsec.secrets
 
 ADD ipsec.conf /etc/ipsec.conf
 ADD ipsec.secrets /etc/ipsec.secrets
