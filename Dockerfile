@@ -10,6 +10,8 @@ RUN apt-get install -y libnss3-dev libnspr4-dev pkg-config libpam-dev \
 
 RUN git clone https://github.com/libreswan/libreswan.git /root/libreswan_src
 
+WORKDIR /root/libreswan_src
+
 RUN make programs
 RUN make install
 
