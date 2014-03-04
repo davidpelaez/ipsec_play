@@ -3,7 +3,7 @@ FROM cpuguy83/ubuntu
 RUN apt-get update
 
 # Libreswan dependencies
-RUN apt-get install libnss3-dev libnspr4-dev pkg-config libpam-dev \
+RUN apt-get install -y libnss3-dev libnspr4-dev pkg-config libpam-dev \
 	libcap-ng-dev libcap-ng-utils libselinux-dev \
 	libcurl4-nss-dev libgmp3-dev flex bison gcc make \
 	libunbound-dev git
