@@ -24,4 +24,4 @@ ADD ipsec.secrets /etc/ipsec.secrets
 EXPOSE 500
 
 # turn on the connection named VPN
-ENTRYPOINT ["/usr/local/sbin/ipsec"]
+ENTRYPOINT ["/bin/bash"]
